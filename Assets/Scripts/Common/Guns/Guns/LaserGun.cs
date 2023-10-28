@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class LaserGun : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class LaserGun : MonoBehaviour
 
     private float _timer;
 
-    [SerializeField] private Text _bulletsNumberUI;
+    [SerializeField] private TextMeshProUGUI _bulletsNumberUI;
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private int _bulletsNumber;
     [SerializeField] private float _shotDelay;

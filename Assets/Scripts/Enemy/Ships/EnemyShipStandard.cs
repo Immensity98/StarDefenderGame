@@ -2,6 +2,24 @@ using UnityEngine;
 
 public class EnemyShipStandard : EnemyShipTemplate
 {
+    public Animation ShipDestroyAnimation;
+    public EnemyHealth EnemyHealth;
+
+    private void Start()
+    {
+        EnemyHealth.DieAnimation += DieAnimation;
+    }
+
+    private void Update()
+    {
+      
+    }
+    public void DieAnimation()
+    {
+        gameObject.GetComponent<Animation>().Play();
+        Debug.Log("Anim");
+    }
+
     private void FixedUpdate()
     {
         EnemyShipMovement();

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,7 +6,7 @@ public class ShotsBonus : BonusTemplate
 {
     private LaserGun LaserGun;
 
-    [SerializeField] private Text _bulletsNumberUI;
+    [SerializeField] private TextMeshProUGUI _bulletsNumberUI;
     [SerializeField] private int GetBulletsValue;
 
     private void Start()

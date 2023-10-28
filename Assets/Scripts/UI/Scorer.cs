@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Scorer : MonoBehaviour
 {
     private int _score;
+    public TextMeshProUGUI ScorerUI;
 
     [SerializeField] private EnemyHealth[] EnemyHealthObjects;
 
@@ -23,5 +25,6 @@ public class Scorer : MonoBehaviour
     private void GetPoints()
     {
         _score += 1;
+        ScorerUI.text = _score.ToString();
     }
 }

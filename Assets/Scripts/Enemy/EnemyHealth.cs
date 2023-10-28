@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
     public UnityEvent IsDie;
+    public event Action DieAnimation;
 
     [SerializeField] private int _health;
 
@@ -29,5 +31,6 @@ public class EnemyHealth : MonoBehaviour
     {
         gameObject.SetActive(false);
         IsDie.Invoke();
+        DieAnimation?.Invoke();
     }
 }

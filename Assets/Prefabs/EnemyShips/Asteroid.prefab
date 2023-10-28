@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4042435747067282662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.71, y: 4.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51,6 +51,8 @@ MonoBehaviour:
   _enemyShipRb: {fileID: 4042435747067282658}
   _speed: 5
   _angularVelocity: 5
+  AsteroidExplosion: {fileID: 7400000, guid: 181b5441505cc444f91ea53025866975, type: 2}
+  EnemyHealth: {fileID: 4042435747067282668}
 --- !u!212 &4042435747067282657
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -131,6 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d7141a4ef2fc6a4f8c40200f13afd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDie:
+    m_PersistentCalls:
+      m_Calls: []
   _health: 1
 --- !u!50 &4042435747067282658
 Rigidbody2D:
