@@ -15,7 +15,7 @@ public class Asteroid : EnemyShipTemplate
 
     private void Start()
     {
-        EnemyHealth.DieAnimation += OnIsDie;
+
     }
 
     public void OnIsDie()

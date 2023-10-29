@@ -41,7 +41,7 @@ public class Spawner : MonoBehaviour
             SetSpawnPosition(element);
 
             element.TryGetComponent(out EnemyHealth enemyHealth);
-            enemyHealth.EnemyHealthProperty = 2;            // Сделать нормально
+            enemyHealth.EnemyHealthProperty = 1;            // Сделать нормально
         }
     }
 

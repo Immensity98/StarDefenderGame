@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4042435747067282659}
   - component: {fileID: 4042435747067282668}
   - component: {fileID: 4042435747067282658}
+  - component: {fileID: -5438460353909151868}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -136,6 +137,7 @@ MonoBehaviour:
   IsDie:
     m_PersistentCalls:
       m_Calls: []
+  animator: {fileID: -5438460353909151868}
   _health: 1
 --- !u!50 &4042435747067282658
 Rigidbody2D:
@@ -158,3 +160,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &-5438460353909151868
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4042435747067282662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 125a771d124757549907c3d996356750, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

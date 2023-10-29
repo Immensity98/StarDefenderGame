@@ -5,7 +5,8 @@ using UnityEngine.Events;
 public class EnemyHealth : MonoBehaviour
 {
     public UnityEvent IsDie;
-    public event Action DieAnimation;
+
+    public Animator animator;
 
     [SerializeField] private int _health;
 
@@ -23,7 +24,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (_health <= 0)
         {
-            Die();
+            SetDieANim();
         }
     }
 
@@ -31,6 +32,10 @@ public class EnemyHealth : MonoBehaviour
     {
         gameObject.SetActive(false);
         IsDie.Invoke();
-        DieAnimation?.Invoke();
+    }
+
+    public void SetDieANim()
+    {
+        animator.SetTrigger("IsDie");
     }
 }
